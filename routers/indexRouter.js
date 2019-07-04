@@ -1,4 +1,5 @@
 const router = require('express').Router()
+const pelamarRouter = require('./pelamarRouter')
 
 // const status = require('./statusLogin')
 // console.log(status)
@@ -25,5 +26,7 @@ router.get('/signup', (req,res)=>{
 router.get('/login', (req, res)=>{
     res.render('login')
 })
+
+
 
 module.exports = router

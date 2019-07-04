@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#applicants {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#applicants td, #applicants th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#applicants tr:nth-child(even){background-color: #f2f2f2;}
+
+#applicants tr:hover {background-color: #ddd;}
+
+#applicants th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #FF4500;
+  color: white;
+}
+</style>
+</head>
+
+<%- include('./components/header.ejs')%>
+
+  <body>
+<%- include('./components/navbar.ejs')%>
+    <div class="container">
+  <h1>
+    <center>
+        Applicants
+    </center>
+    </h1>
+  <table id="applicants">
+    <tr>
+      <th>id</th>
+      <th>name</th>
+      <th>age</th>
+      <th>job_wanted</th>
+      <th>Salary_wanted</th>
+      <th>Password</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <% data.forEach((el, idx)=>{  %>
+    <tr>
+      <td><%= idx+1 %></td>
+      <td><%= el.name %></td>
+      <td><%= el.age %></td>
+      <td><%= el.job_wanted %></td>
+      <td><%= el.salary_wanted %></td>
+      <td><%= el.password %></td>
+      <td><a href = "/pelamar/edit/<%= el.id %>">edit</a></td>
+      <td><a href="/pelamar/delete/<%= el.id %>">delete</a></td>
+    </tr>
+    <% }) %>
+  </table>
+  <br><br>
+    </div>
+  </body>
+</html>

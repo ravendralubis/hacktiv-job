@@ -2,6 +2,13 @@
 const express = require('express')
 const app = express()
 const port = 3000
+// const session = require('express-session')
+// app.set('trust proxy', 1) // trust first proxy
+// app.use(session({
+//   secret: 's3Cur3',
+//   name: 'sessionId'
+// }))
+
 
 // REQUIRED
 
@@ -20,6 +27,11 @@ const router = require('./routers/indexRouter')
 const companyRouter = require('./routers/companyRouter');
 const pelamarRouter = require('./routers/pelamarRouter')
 // Load the router module in app, received from variable router
+app.use(express.json())
+app.use(express.urlencoded({extended: true}))
+
+app.set('view engine', 'ejs')
+
 app.use('/', router)
 app.use('/company', companyRouter)
 app.use('/pelamar', pelamarRouter)
