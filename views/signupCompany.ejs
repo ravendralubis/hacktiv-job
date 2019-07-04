@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hack's Tev Job</title>
+    <title>Hack's TeveJob</title>
 </head>
 <body>
     <header style="text-align: center">
-        <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif"> Login </h1>
-        <h4 style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif"><a href="/login">Back</a></h4>
+        <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif"> Add Data Company </h1>
+        <h4 style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif"><a href="/company">Back</a></h4>
     </header>
     <br>
         <style>
@@ -36,16 +36,20 @@
             }
         </style>
     <br>
-    <form action = "/student/add" method="POST">
-        <h5>First Name</h5>
-        <input name="first_name" type = "text" placeholder="Please fill your first name">
-        <h5>Last Name</h5>
-        <input name="last_name" type = "text" placeholder="Please fill your last name">
-        <h5>Email</h5>
-        <input name="email" type = "text" placeholder="Please fill your email">
+    <form action = "/company/add" method="POST">
+        <h5>Name</h5>
+        <input name="name" type = "text" placeholder="Please fill your name / company">
+        <h5>Description</h5>
+        <input name="deskripsi" type = "text" placeholder="Please fill your description">
+        <h5>Job Position</h5>
+        <input name="job_position" type = "text" placeholder="Please fill position you want to make / wanted">
+        <h5>Salary</h5>
+        <input name="salary" type = "text" placeholder="Please fill salary that you want take / give wanted">
+        <h5>Password</h5>
+        <input name="password" type = "text" placeholder="Please fill password">
         <br>
         <br>
-        <input type="submit" value="Add Student" class="button">
+        <input type="submit" value="Add Data" class="button">
     </form>
 </body>
 </html>

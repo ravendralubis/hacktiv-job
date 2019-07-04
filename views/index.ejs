@@ -1,40 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <meta name="author" content="kelompok 5">
     <title>Home Page</title>
-</head>
+    <link rel="stylesheet" href="./css/style.css">
+</head> 
 <body>
-    <header style="text-align: center">
-        <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif"> Hack's TivJob </h1>
-        <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif">The Right Choice for Your Future</h3>
-        <h4 style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif"><a href="#">Home</a></h4>
-        <h4 style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif"><a href="/about">About</a></h4>
-        <h4 style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif"><a href="/contact">Contact</a></h4>
-        <h4 style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif"><a href="/signup">Sign Up</a></h4>
-        <h4 style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif"><a href="/login">Log In</a></h4>
+    <header>
+     
+    <div class="row logo">
+        <!-- <img src="./img/main-logo.png"> -->
+    </div>
+        <nav>
+          <ul class="main-nav">    
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="contact">Kontak</a></li>
+        </ul>
+        
+        <a href="company">USE AS A COMPANY</a>
+        <a href="pelamar">USE AS AN APPLICANY</a>
+        </nav>
+      </div>
     </header>
-    <br>
-        <style>
-            table  {
-                border-style: solid;
-                border-bottom: thick line #ff0000;
-                border-top: none;
-                border-left: none;
-                border-right: none;
-                width: 1000px;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-            }
-            table.data{
-                border-bottom: none;
-                border-top: none;
-                border-left: none;
-                border-right: none;
-                width: 1000px;
-                font-family:'Courier New', Courier, monospace
-            }
-        </style>
-</body>
+
+
+
+    <section id="newsletter">
+      <div class="container">
+        <form>
+          <input type="email" placeholder="Ex:john@domain.com">
+          <button type="submit" class="button_1">Subsribe!</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="boxes">
+      <div class="container">
+          <h2>Tiga Alasan Memilih Belajar Web Training Center</h2>
+          <br><br>
+        <div class="box">
+          <!-- <img src="./img/hemat.png"> -->
+          <h3>Hemat</h3>
+          <p>Anda dapat menghemat pengeluaran hingga jutaan rupiah namun dengan hasil yang luar biasa! Kami bisa jamin bahwa dengan harga yang kami tawarkan, Anda akan mendapatkan manfaat yang begitu berharga!</p>
+        </div>
+        <div class="box">
+          <!-- <img src="./img/target.png"> -->
+          <h3>Target Spesifik</h3>
+          <p>Kami menyediakan target pembelajaran sesuai keinginan anda baik dari segi usia, lokasi, pekerjaan, dan waktu. Diskusikan segera kenginan anda dengan kami!</p>
+        </div>
+        <div class="box">
+          <!-- <img src="./img/pengalaman.png"> -->
+          <h3>Berpengalaman</h3>
+          <p>Tim kami merupakan praktisi expert yang telah teruji di bidangnya selama bertahun-tahun serta berpengalaman di company-company besar dan ternama. Bukan tanpa alasan kami berani menjamin peningkatan kemampuan anda!</p>
+        </div>
+      </div>
+    </section>
+<section class="testimoni center">
+      <div class="container"><br><br>
+        <h2>Pendapat Mereka</h2>
+        <ul class="third-form">
+          <li class="form-box">
+            <!-- <img src="img/c1.jpg" alt=""> -->
+            <p>" Awalnya sih coba-coba, tapi lama-kelamaan jadi ketagihan. Akhirnya aku pun semakin suka dengan koding, dan memutuskan untuk hijrah dari aktris menjadi developer Internasionil. Thanks a lot WTC!"</p>
+            <h4>Cinta Laura</h4>
+          </li>
+        </ul>
+        <ul class="third-form">
+          <li class="form-box">
+            <!-- <img src="img/c2.jpg" alt=""> -->
+            <p>" Dari kecil cita-cita saya menjadi pengembang, dan begitu lihat penawaran dari WTC saya tertarik untuk ikut training di WTC. Sekarang saya telah berhasil menjadi pengembang web, walaupun itu berbeda dari tujuan awal saya tapi saya menikmatinya. Terima kasih WTC. "</p>
+            <h4>Andre Taulani</h4>
+          </li>
+        </ul>
+        <ul class="third-form">
+          <li class="form-box">
+            <!-- <img src="img/c3.jpg" alt=""> -->
+            <p>" Kecintaan saya pada dunia maya membuat saya fokus pada pilihan program di WTC. Setelah lulus dari WTC, tingkat kepintaran saya jauh bertambah di bidang web-developer karena belajar dari ahlinya ahli. Makasih banyak WTC! "</p>
+            <h4>Syahroni</h4>
+          </li>
+        </ul>
+      </div><br>
+    </section>
+    <footer>
+      <p>Hack's TeveJob, Copyright &copy; 2019</p>
+    </footer>
+  </body>
 </html>
